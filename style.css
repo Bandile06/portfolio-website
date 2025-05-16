@@ -105,10 +105,12 @@ margin-top: 0;
 }
 
 nav {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
     z-index: 1000;
+
     
 }
 
