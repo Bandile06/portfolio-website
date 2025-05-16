@@ -16,7 +16,7 @@ header{
 section{
     padding: 20px;
     margin: 10px auto;
-    max-width: 900px;
+    max-width: 600px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0, 0.113);
@@ -27,12 +27,110 @@ section{
 }
 
 h2{
-    color: #15523d;
+    color: #333;
 }
 
 footer{
     color: #fff;
     text-align: center;
     padding: 10px;
+    background-color: #15523d;
+}
+
+.social-links{
+    margin-top: 10px;
+}
+
+.social-links > a{
+    margin: 0 10px;
+    color: #0000FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links > a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    color: #fff; 
+}
+
+footer > p {
+    font-size: 12px;
+}
+
+/* Project list */
+.project-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-left: 4px solid #15523d;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.113);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card > h3 {
+margin-top: 0;
+}
+
+.project-card > p {
+    font-size: 14px;
+}
+
+.project-card > a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #15523d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font: bold;
+    transition: background-color 0.2s ease;
+}
+
+.project-card > a:hover {
+    background-color: #15523d;
+}
+
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    gap: 20px;
+
+}
+
+.navbar > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: backgroud-color 0.2s ease;
+}
+
+.navbar > li > a:hover {
     background-color: #15523d;
 }
